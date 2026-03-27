@@ -109,11 +109,36 @@ Start with frontmatter. Write `description` last — it's the hardest and most i
 ### Step 4: Populate references/
 Move anything longer than ~50 lines of reference material out of SKILL.md.
 
-### Step 5: Test
-Run the skill against a real request. Check: does it route correctly? Does it produce the right output without over-explaining?
+### Step 5: Validate
+Run this checklist before shipping:
 
-### Step 6: Update INDEX.md
-Add the new skill to `skills/INDEX.md` with table entry: name | description | path.
+```
+✓ description covers all real trigger phrases (incl. Chinese)
+✓ DON'T USE WHEN prevents obvious false positives
+✓ Body ≤500 lines
+✓ No content duplicated between SKILL.md and references/
+✓ No README.md, CHANGELOG.md, or auxiliary files
+✓ Nicole's voice/style encoded
+✓ External actions require explicit confirmation
+```
+
+### Step 6: Package (if distributing)
+Create a `.skill` archive:
+
+```bash
+# From parent directory of skill-name/
+zip -r skill-name.skill skill-name/
+```
+
+Verify the archive contains:
+- `skill-name/SKILL.md`
+- `skill-name/references/` (if any)
+- `skill-name/scripts/` (if any)
+- `skill-name/assets/` (if any)
+- Nothing else
+
+### Step 7: Update INDEX.md
+Add to `skills/INDEX.md`: name | description | path.
 
 ---
 
