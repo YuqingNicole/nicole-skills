@@ -1,0 +1,4 @@
+interface:
+  display_name: "X Renaissance Cover"
+  short_description: "Generate 5:2 art covers for X long essays"
+  default_prompt: "Use $x-renaissance-cover to create a 5:2 Renaissance-style cover for my X long-form post."
