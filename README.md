@@ -1,6 +1,6 @@
 # nicole-skills
 
-Nicole 专属 AI skill 库。5 个 skill，面向 OpenClaw / Claude Code 环境。
+Nicole 专属 AI skill 库。6 个 skill，面向 OpenClaw / Claude Code 环境。
 
 ## Skills
 
@@ -11,6 +11,7 @@ Nicole 专属 AI skill 库。5 个 skill，面向 OpenClaw / Claude Code 环境�
 | `data-viz` | 图表 + Excel 生成 | Nicole 配色方案、CJK 字体配置、反模式清单 |
 | `research-engine` | 市场调研 + 战略分析 | T1/T2/T3 证据分级、反偏见 checklist、Pre-mortem |
 | `x-renaissance-cover` | X 长文 5:2 封面生图 | 文艺复兴构图、标题可读性、AI 议题象征化 prompt |
+| `minimal-zine-poster-v01` | 极简纸感 zine 海报生图 | 3:5 留白构图、纸张肌理、中文字形 fallback、失败修复策略 |
 
 ## 安装
 
